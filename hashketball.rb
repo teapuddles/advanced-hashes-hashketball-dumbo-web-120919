@@ -169,9 +169,9 @@ def player_numbers(team_name)
          binding.pry
          if player == :players
       end
+     end
     end
   end
-end
 end 
          
   
