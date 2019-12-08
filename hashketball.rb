@@ -199,7 +199,7 @@ end
   
 def big_shoe_rebounds
   game_hash().each do |location, team_data|
-    team_data[:players].each do |player_name, player_name[:shoe]|
+    team_data[:players].each do |player_name|
       if player_name[:shoe].max 
         return player_name[:rebounds]
       end
