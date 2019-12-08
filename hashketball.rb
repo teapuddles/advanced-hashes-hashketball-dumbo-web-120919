@@ -163,14 +163,9 @@ end
 
 def player_numbers(team_name)
   game_hash.map do |loc, team|
-    team.each do |attribute, data|
-     if attribute == :team_name
-       team[:players].each do |num|
-         if num[:players] == :number
-           return data[:number]
-         end
-      end
-     end
+    if team[:team_name] == team_name
+      team.each do |attributes, data|
+        binding.pry
     end
   end
 end 
