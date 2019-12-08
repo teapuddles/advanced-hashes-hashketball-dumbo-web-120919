@@ -16,7 +16,7 @@ def game_hash
               :blocks => 7,
               :slam_dunks => 2
             },
-            { :player_name => "Bismark Biyombo",
+            { :player_name => "Bismack Biyombo",
               :number => 0, 
               :shoe => 16,
               :points => 12,
@@ -132,6 +132,47 @@ def num_points_scored(name)
   end
 end
 
+def shoe_size(name)
+  game_hash.each do |place, team|
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |person|
+          if person[:player_name] == name
+            return person[:shoe]
+          end
+        end
+      end
+    end
+  end
+end
+
+
+def team_colors(team_name)
+  game_hash.map do |loc, team|
+    if team[:team_name] == team_name
+      return team[:colors]
+    end
+  end
+end
+
+def team_names
+  game_hash.map do |loc, team|
+    team[:team_name]
+  end
+end
+
+def player_numbers(team_name)
+  game_hash.map do |loc, team|
+    team.each do |attribute, data|
+     if attribute == :team_name
+       binding.pry
+       data.each do |player, num|
+      end
+    end
+  end
+end
+         
+  
 
 
 
