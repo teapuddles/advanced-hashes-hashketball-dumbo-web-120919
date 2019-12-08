@@ -196,8 +196,11 @@ def player_stats(players_name)
 end
   
 def big_shoe_rebounds
+  big_shoe = nil
   game_hash.each do |loc, team|
     team.each do |attributes, data|
+      if big_shoe == nil 
+        data[:shoe] > big_shoe
 
 
 
