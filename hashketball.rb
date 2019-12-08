@@ -178,6 +178,12 @@ def player_numbers(team_name)
 end 
 
 def player_stats(players_name)
+  new_hash = {}
+  game_hash.each do |loc, team|
+    team.each do |attributes, data|
+      if attributes == :players
+        data.each do |stats|
+          if players_name == 
 end
   
 
