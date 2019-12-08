@@ -169,8 +169,7 @@ def player_numbers(team_name)
       team.each do |attributes, data|
         if attributes == :players
           data.each do |person|
-            #binding.pry
-            return person[:number]
+            num_array << person[:number]
           end
         end
       end
