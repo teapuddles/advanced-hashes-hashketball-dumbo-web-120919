@@ -205,10 +205,10 @@ def big_shoe_rebounds
         data.each do |shoe|
         binding.pry
         if shoe[:shoe] > largest_shoe
-          largest_shoe = :shoe
+          
         end
       end
-      end
+     end
     end
   end
 end
