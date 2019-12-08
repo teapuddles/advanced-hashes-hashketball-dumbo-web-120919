@@ -205,6 +205,7 @@ def big_shoe_rebounds
         data.each do |shoe|
         if shoe[:shoe] > largest_shoe
           largest_shoe = shoe[:shoe]
+          shoe[:rebounds]
           end
         end
       end
