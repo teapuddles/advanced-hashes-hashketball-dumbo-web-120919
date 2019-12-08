@@ -186,6 +186,7 @@ def player_stats(players_name)
           if stats[:player_name] == players_name
             return new_hash = stats.delete_if do |k, v|
               k = :player_name
+            end
           end
         end
       end
