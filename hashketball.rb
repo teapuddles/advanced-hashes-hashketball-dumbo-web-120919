@@ -169,6 +169,7 @@ def player_numbers(team_name)
           data.each do |person|
             binding.pry
             return person[:number]
+          end
         end
       end
     end
