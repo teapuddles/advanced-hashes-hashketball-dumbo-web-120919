@@ -206,6 +206,7 @@ def big_shoe_rebounds
         binding.pry
         return player_name[:rebounds]
       end
+      end
     end
   end
 end
