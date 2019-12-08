@@ -195,6 +195,9 @@ def player_stats(players_name)
   new_hash
 end
   
+def big_shoe_rebounds
+  game_hash.each do |loc, team|
+    team.each do |attributes, data|
 
 
 
