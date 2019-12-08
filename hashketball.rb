@@ -184,6 +184,11 @@ def player_stats(players_name)
       if attributes == :players
         data.each do |stats|
           if stats[:player_name] == players_name
+          end
+        end
+      end
+    end
+  end
 end
   
 
