@@ -206,7 +206,7 @@ def big_shoe_rebounds
         data.each do |shoe|
         if shoe[:shoe] > largest_shoe
           largest_shoe = shoe[:shoe]
-          most_rebounds = 
+          most_rebounds = shoe[:rebounds]
           end
         end
       end
