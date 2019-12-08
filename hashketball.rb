@@ -204,7 +204,7 @@ def big_shoe_rebounds
       if attributes == :players
         data.each do |shoe|
 
-        if shoe[:shoe] > shoe[:shoe]
+        if shoe[:shoe] > largest_shoe
           largest_shoe = shoe[:shoe]
         end
         return player_name[:rebounds]
