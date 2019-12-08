@@ -166,7 +166,8 @@ def player_numbers(team_name)
     team.each do |attribute, data|
      if attribute == :team_name
        team[:players].each do |num|
-         binding.pry
+         if num[:players] == :number
+           return data[:number]
       end
      end
     end
